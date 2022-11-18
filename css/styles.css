@@ -1,0 +1,196 @@
+
+	/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilos fuente */
+body{   
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style: none;
+}
+#navbar{
+	height: 100px;
+}
+#navbar .logo img{
+	height: 60px;
+}
+
+#navbar a{
+	color: #000;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+}
+#navbar a:hover{
+	color: #66c8f7;
+}
+#navbar .contenedor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+#navbar ul{
+	display: flex;
+}
+#navbar ul li{
+	margin-left: 20px;
+}
+#presentacion{
+    padding: 80px 0;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.presentacion-flex{
+    display: flex;
+}
+.presentacion-flex h1{
+    flex: 1;
+    text-transform: uppercase;
+}
+.presentacion-flex p{
+    flex: 1;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+.forma-1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+#cambios{
+	padding: 80px 0;
+}
+.fondo-gray{
+	background: #EFF1F5;
+}
+.fondo-white{
+    background: #fff;
+}
+.fondo-black{
+    background: #000;
+	color: #fff;
+}
+.wrap{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+}
+.forma-3{
+	font-size: 2rem;
+}
+.caja{
+	padding: 40px;
+}
+.caja-1{
+	grid-column: 1/4;
+	grid-row: 1;
+}
+.caja-2{
+	grid-column: 4/6;
+	grid-row: 1;
+}
+/* Sobre Nosotros */
+#SN{
+	padding: 80px 0;
+}
+#SN h1{
+	padding-bottom: 20px;
+}
+#SN p{
+	padding-bottom: 20px;
+}
+#SN p{
+	width: 60%;
+}
+/* Services */
+#contacto{
+	padding: 80px 0;
+}
+
+.contacto-flex{
+	display: flex;
+	gap: 20px;
+	padding: 50px 0;
+}
+
+.contacto-flex-box{
+	padding: 40px;
+	background: #fff;
+	color: #000;
+}
+#contacto .logo img{
+    height: 60px;
+}
+
+.card-title, .card-text{
+	color: black;
+}
+#Esports{
+	padding: 80px;
+}
+footer{
+	display: none;
+}
+
+
+
+
+@media screen and (max-width:1024px){
+	#navbar{
+		height: 100%;
+		padding: 20px;
+	}
+	#navbar .logo img{
+		margin-bottom: 20px;
+	}
+	#navbar .contenedor{
+		flex-direction: column;
+	}
+	#presentacion{
+		padding: 30px 0;
+		text-align: center;
+	}
+	.presentacion-flex{
+		flex-direction: column;
+	}
+	.presentacion-flex p{
+		padding: 10px 0;
+	}
+	#cambios{
+		padding: 30px 0;
+	}
+	.wrap{
+		grid-template-columns: repeat(1,1fr);
+	}
+	.caja-1 , .caja-2{
+		grid-column: 1;
+	}
+	.caja-1{
+		grid-row: 1;
+	}
+	.caja-2{
+		grid-row: 2;
+	}
+	#SN{
+		padding: 30px 0;
+		text-align: center;
+	}
+	#SN p{
+		width: 100%;
+	}
+	#contacto{
+		padding: 30px 0;
+		text-align: center;
+	}
+	.contacto-flex{
+		flex-direction: column;
+		padding: 10px 0;
+	}
+}
